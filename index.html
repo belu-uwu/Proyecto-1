@@ -1,34 +1,30 @@
 <!DOCTYPE HTML>
-<head>
 <html lang="en">
+<head>
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-     <header class="header">
-     <h1 id="title" class="text-center">Survey Form</h1>
-     <p id="description">Thank you for read my web</p>
-    </header>
-
-   
-    <div class="form group">
+<body>  
+<div class="container">
+  <header class="header">
+  <h1 id="title" class="text-center">Survey Form</h1><p id="description">Thank you for read my web</p>
+</header>
+<form id="survey-form">
+<div class="form group">
      <label id="name-label" for="name">Name</label>
      <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required=""></input>
     </div>
-
-    <div class="form group">
+<div class="form group">
      <label id="email-label" form="email">Email</label>
      <input id="email" type="email" required="" placeholder="Enter your Email"></input>
-    </div> 
-     
+    </div>
+
     <div class="form-group">  
     <label id="number-label" for="number">Age
      <span class="clue">(optional)</span></label>
      <input id="number" type="number" name="age" min="18" max="100" placeholder="Age">
     </input>
     </div>
-
-    <div class="form-group"></div>
+<div class="form-group">
       <p>Which option best describes your current role?</p>
         <select id="dropdown" class="form-control" name="role" required=""> 
           <option disabled="" selected="" value="">Select current role</option>
@@ -38,26 +34,23 @@
           <option value="preferNo">Prefer not to say</option>
           <option value="other">Other</option>
         </select>
-    </div>
+ </div>   
 
-    <div class="form-group">
-      <p>Would you recommend freeCodeCamp to a friend?</p>
-    </div>
 
- <input type="checkbox" value="value"></input>
   <input type="checkbox" value="value"></input>
-<button id="submit">
-    </button> 
-    <textarea>
-    </textarea>
-<select id="dropdown">
-  <option>opcion 1</option>
-  <option>opcion 2</option>
-  <input type="radio" value="value" name="value"></input>
-  <input type="radio" value="value" name="value"></input>
-  </select>
+  <input type="checkbox" value="value"></input>
+  <button id="submit">
+      </button> 
+     <textarea>
+     </textarea>
+  <select id="dropdown">
+   <option>opcion 1</option>
+   <option>opcion 2</option>
+   <input type="radio" value="value" name="value"></input>
+   <input type="radio" value="value" name="value"></input>
+   </select>
 
-  </div>
-  </body>
 </form>
+</div>
+</body>
 </html>
