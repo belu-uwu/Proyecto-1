@@ -4,24 +4,30 @@
 <link rel="stylesheet" href="styles.css"></html>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-     <h1 id="title" class="text-center">Survey Form</h1>
-     <p id="description">Thank you for read my web</p>
-   </header>
+    <div class="container">
+      <header class="header">
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description">Thank you for read my web</p>
+    </header>
 
-   <form id="survey-form">
+   
     <div class="form group">
       <label id="name-label" for="name">Name</label>
       <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required=""></input>
     </div>
 
+    <div class="form group">
+    <label id="email-label" form="email">Email</label>
+     <input id="email" type="email" required placeholder="enter your email"></input>
+    </div> 
+     
+    <div class="form-group">  
+    <label id="number-label" placeholder="Age">Age</label>
+     <input id="number" type="number" min="18" max="100" placeholder="20">
+     </input>
+    </div>
 
-<label id="email-label">
-  <input id="email" type="email" required placeholder="enter your email">boriscuchomoran@gmail.com</input>
-  </label>
 
-  <label id="number-label" placeholder="Age"><input id="number" type="number" min="18" max="100" placeholder="20">Age</input></label>
 
  <input type="checkbox" value="value"></input>
   <input type="checkbox" value="value"></input>
