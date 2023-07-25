@@ -1,33 +1,48 @@
 <!DOCTYPE HTML>
 <head>
 <html lang="en">
-<link rel="stylesheet" href="styles.css"></html>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-      <header class="header">
-      <h1 id="title" class="text-center">Survey Form</h1>
-      <p id="description">Thank you for read my web</p>
+     <header class="header">
+     <h1 id="title" class="text-center">Survey Form</h1>
+     <p id="description">Thank you for read my web</p>
     </header>
 
    
     <div class="form group">
-      <label id="name-label" for="name">Name</label>
-      <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required=""></input>
+     <label id="name-label" for="name">Name</label>
+     <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required=""></input>
     </div>
 
     <div class="form group">
-    <label id="email-label" form="email">Email</label>
-     <input id="email" type="email" required placeholder="enter your email"></input>
+     <label id="email-label" form="email">Email</label>
+     <input id="email" type="email" required="" placeholder="Enter your Email"></input>
     </div> 
      
     <div class="form-group">  
-    <label id="number-label" placeholder="Age">Age</label>
-     <input id="number" type="number" min="18" max="100" placeholder="20">
-     </input>
+    <label id="number-label" for="number">Age
+     <span class="clue">(optional)</span></label>
+     <input id="number" type="number" name="age" min="18" max="100" placeholder="Age">
+    </input>
     </div>
 
+    <div class="form-group"></div>
+      <p>Which option best describes your current role?</p>
+        <select id="dropdown" class="form-control" name="role" required=""> 
+          <option disabled="" selected="" value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+    </div>
 
+    <div class="form-group">
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+    </div>
 
  <input type="checkbox" value="value"></input>
   <input type="checkbox" value="value"></input>
@@ -41,7 +56,8 @@
   <input type="radio" value="value" name="value"></input>
   <input type="radio" value="value" name="value"></input>
   </select>
-  </form>
+
   </div>
   </body>
 </form>
+</html>
